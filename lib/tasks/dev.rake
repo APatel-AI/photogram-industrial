@@ -2,6 +2,7 @@ desc "Fill the database tables with some sample data"
 task({ :sample_data => :environment }) do
   p "Creating sample data"
 
+
   if Rails.env.development?
     FollowRequest.destroy_all
     Comment.destroy_all

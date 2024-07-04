@@ -15,7 +15,7 @@
         </div>
         <ul class="list-group list-group-flush">
           <% photo.comments.each do |comment| %>
-            <li class="list-group-item"> 
+            <li class="list-group-item">
               <div class="d-flex">
                 <div class="flex-shrink-0">
                   <img src="..." alt="...">
@@ -30,8 +30,12 @@
 
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+
+          <div class="card-body">
+            <%= render "comments/form", comment: photo.comments.build %>
+
+          </div>
+         
         </div>
       </div>
     </div>

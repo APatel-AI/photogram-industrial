@@ -1,0 +1,4 @@
+<%= render "users/nav_bar"%>
+<% @user.feed.each do |photo| %>
+  <%= render "photos/photo", photo: photo %>
+<% end %>
